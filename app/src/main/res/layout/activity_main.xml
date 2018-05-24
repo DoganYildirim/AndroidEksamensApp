@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.eksamensapp.MainActivity">
+
+    <LinearLayout
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnCam"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Open camera"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relLay"
+        android:layout_width="match_parent"
+        android:layout_weight="0.8"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/imageFilter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="0.1"
+           android:orientation="horizontal">
+
+           <Button
+               android:id="@+id/btnShare"
+               android:layout_width="0dp"
+               android:layout_weight="0.25"
+               android:layout_height="wrap_content"
+               android:text="SHARE" />
+
+           <Button
+               android:id="@+id/btnSave"
+               android:layout_width="0dp"
+               android:layout_weight="0.25"
+               android:layout_height="wrap_content"
+               android:text="SAVE" />
+
+           <Button
+               android:id="@+id/btnApply"
+               android:layout_width="0dp"
+               android:layout_weight="0.25"
+               android:layout_height="wrap_content"
+               android:text="APPLY" />
+
+           <Button
+               android:id="@+id/btnLoad"
+               android:layout_width="0dp"
+               android:layout_weight="0.25"
+               android:layout_height="wrap_content"
+               android:text="LOAD" />
+       </LinearLayout>
+</LinearLayout>
